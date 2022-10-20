@@ -6,7 +6,7 @@ export default {
   title: "Components/Text",
   component: Text,
   args: {
-    children: "Lorem Ipsum.",
+    children: "Text",
     size: "md",
   },
   argTypes: {
@@ -37,7 +37,7 @@ export const Large: StoryObj<TextProps> = {
 export const CustomComponent: StoryObj<TextProps> = {
   args: {
     asChild: true,
-    children: <p> Teste</p>,
+    children: <p> Text with P tag</p>,
   },
   argTypes: {
     children: {
@@ -45,5 +45,10 @@ export const CustomComponent: StoryObj<TextProps> = {
         disable: true,
       },
     },
+    asChild: {
+      table: {
+        disable: true,
+      }
+    }
   },
 };
